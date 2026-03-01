@@ -1,0 +1,234 @@
+
+Muito bem.
+
+Assim, enquanto na última lição estávamos a analisar as implementações locais da utilização do Git e
+
+do Controlo de Versão, nesta lição vamos falar sobre como pode criar um Repositório Remoto.
+
+Ou seja, um repositório alojado no servidor ou no computador de outra pessoa através do GitHub.
+
+A maioria das pessoas já deve ter ouvido falar do GitHub
+
+e, certamente, já deve ter utilizado o GitHub muitas vezes.
+
+Por isso, se ainda não criou uma conta no GitHub, esta é a altura certa para o fazer.
+
+Por isso, vá a github.com e preencha este formulário rápido para criar uma conta no GitHub.
+
+É totalmente gratuito e só tem de confirmar o seu e-mail para poder aceder a ele.
+
+Depois de o fazer, vá em frente e inicie sessão.
+
+Depois de iniciar sessão, deve ver esta página.
+
+E o que vamos fazer é criar um repositório dentro do GitHub baseado no navegador.
+
+Por isso, se navegar até ao canto superior direito e clicar na seta de mais (+), pode selecionar Novo repositório e
+
+eu vou chamar ao meu repositório, com o mesmo nome, acho que lhe vamos chamar "História" e vamos dar-lhe uma descrição.
+
+Digamos, "Minha obra-prima". Agora, por padrão, todos os
+
+repositórios que você cria no GitHub são Públicos.
+
+Isto significa que qualquer pessoa pode ver todos os ficheiros dentro do seu repositório guardado.
+
+Assim, tudo o que fizer commit no seu repositório remoto ou no seu repositório GitHub será público.
+
+Se não quiser isso, pode selecionar Privado, mas na maioria dos casos, se não
+
+estiver a fazer nada que seja ultrassecreto, ou se não estiver a desenvolver uma
+
+tecnologia completamente nova, então ter um repositório público não é um grande problema.
+
+E, por outro lado, pode ver muitos repositórios públicos de outras pessoas
+
+e pode ver, por exemplo, como estruturam o seu código, qual é
+
+o seu estilo, e pode ver como as pessoas fazem as coisas.
+
+Por exemplo, no GitHub, há repositórios inteiros sobre coisas como flappy bird.
+
+É toda a implementação do flappy bird e podemos executá-la ou também
+
+podemos ver a base de código deles para ver como fizeram isto.
+
+Esta é a beleza do código-fonte aberto e, à medida que evolui na sua jornada para se tornar
+
+um programador, pode descobrir que quer contribuir para outros projectos de código-fonte aberto, ajudá-los um pouco e
+
+trabalhar numa equipa virtual para tentar contribuir com o seu conhecimento e as suas competências de programação.
+
+Assim que tiver selecionado público, vou deixar esta parte vazia.
+
+Ainda não vou inicializar um README para o meu repositório.
+
+A seguir, vou clicar no grande botão verde e criar o meu repositório.
+
+Agora, pode ver que há duas formas de configurar o seu repositório.
+
+Pode configurá-lo no GitHub no ambiente de trabalho, o cliente de ambiente de
+
+trabalho deles, do qual não sou grande fã, mas o que vamos fazer
+
+é utilizar as instruções da linha de comandos para configurar o nosso repositório.
+
+Por isso, vamos fazer push de um repositório existente que temos localmente para este repositório remoto.
+
+Para o fazer, precisamos de copiar o endereço do nosso repositório GitHub e vamos utilizar estas duas linhas
+
+de código para transferir ou fazer push do nosso repositório local existente a partir da linha de comandos.
+
+Muito bem.
+
+Estou atualmente no meu diretório Story, que também é
+
+o diretório de trabalho para este projeto em particular.
+
+E aqui vou novamente dar uma olhada no "git log" para ver quais commits anteriores nós temos.
+
+E podem ver que temos dois commits anteriores e eu gostaria de os colocar no GitHub.
+
+Para o fazer, a primeira coisa a fazer é criar um controlo remoto.
+
+Portanto, está a dizer ao meu Repositório Git Local que criei um Repositório Remoto
+
+algures na Internet e que quero transferir todos os meus commits para lá.
+
+Portanto, o comando que vamos usar é "git remote add origin".
+
+Agora, origin é simplesmente o nome do seu controlo remoto e, teoricamente, pode chamar-lhe o que quiser.
+
+Pode chamar-lhe bacon se quiser, mas por convenção e é
+
+altamente recomendável que mantenha simplesmente o nome de origem.
+
+E a razão é porque a maioria dos programadores está habituada à nomenclatura convencional, o que
+
+significa que será muito mais fácil para eles compreenderem o que se passa no seu
+
+projeto quando o virem, em vez de você fazer algo completamente diferente, o que será
+
+muito surpreendente e será muito mais difícil para as pessoas compreenderem o que se passa.
+
+Portanto, "git remote add origin", e depois vamos colar o URL do nosso
+
+repositório remoto no GitHub, e depois vamos em frente e carregamos em Enter.
+
+Agora que o repositório remoto está criado, podemos enviar o nosso
+
+repositório local para o nosso repositório remoto, que se chama origem.
+
+Por isso, vamos dizer "git push -u origin main".
+
+E o que esta linha de código faz é empurrar o seu repositório local para o repositório remoto usando
+
+a flag u ou a opção u, que basicamente liga o seu repositório remoto e o seu repositório local.
+
+E depois vamos empurrá-lo para o ramo remoto que se chama
+
+origem, e vamos empurrá-lo para o ramo que se chama principal.
+
+O ramo principal é simplesmente o ramo padrão ou o ramo principal de todos os seus commits.
+
+E mais tarde, quando falarmos de ramificação, vamos falar mais sobre
+
+o que é um principal e o que é uma ramificação.
+
+Mas, por agora, estamos apenas a dizer que vamos fazer push do nosso repositório
+
+local para este origin remote e vamos fazer push para o ramo principal.
+
+Então, vamos em frente e pressionar Enter. E vai haver um pouco de
+
+trabalho a ser feito em segundo plano, porque vai ter de carregar o
+
+seu repositório local para o repositório remoto nos servidores do GitHub e, dependendo
+
+do tamanho do seu repositório local, isto pode demorar vários períodos de tempo.
+
+Agora, assim que virmos o nosso prompt, o cursor a piscar ou o sinal de dólar, isso
+
+significa que o nosso push foi bem sucedido e, como podem ver, diz "branch main set
+
+up to track remote branch main from origin". Parece muito confuso, mas se voltarem ao GitHub
+
+e estiverem na mesma página, tudo o que têm de fazer é carregar no comando R
+
+para atualizar ou simplesmente premir o botão de atualização e podem ver que todos os nossos
+
+ficheiros estão agora alojados no GitHub e estão completos com todas as nossas mensagens de confirmação.
+
+Por isso, se entrarmos em Insights e em Network, podemos ver o nosso
+
+ramo principal, que atualmente só tem dois pontos de salvaguarda ou dois commits.
+
+E se passarmos o cursor sobre eles, podemos ver as mensagens de commit de cada um deles.
+
+À medida que constrói o seu projeto, à medida que adiciona mais commits, quer localmente, quer enviando-o
+
+remotamente, ou provavelmente fazendo ambos, pode ver o progresso dos seus ficheiros no seu repositório GitHub.
+
+Agora, pode ver todo o código, se for um ficheiro de código ou, no nosso caso, apenas
+
+um ficheiro de texto alojado no GitHub, e pode indicar a qualquer pessoa que o queira utilizar.
+
+E, na verdade, há casos em que as pessoas escrevem muitas histórias utilizando o GitHub, só porque
+
+é muito bom para registar os pontos de salvaguarda e poder reverter para versões anteriores no passado.
+
+Assim, por exemplo, se voltar à página principal e for aos seus
+
+commits, pode ver os dois commits quando foram feitos e, se
+
+clicar neles, pode ver as alterações que foram feitas nesses momentos.
+
+Assim, se olharmos para o capítulo 1, podemos ver que isto é tudo
+
+o que tínhamos na altura em que fizemos a nossa primeira submissão.
+
+Anteriormente, dissemos que temos um diretório Working, que é o diretório onde inicializámos o git.
+
+Depois, podemos enviar os nossos ficheiros para uma área de teste onde podemos escolher os ficheiros que queremos confirmar.
+
+Depois, quando estivermos prontos, podemos fazer o commit dos nossos ficheiros ou do nosso save point para o nosso repositório local.
+
+Assim, depois de ter feito alguns commits, tem esta linha de tempo
+
+de vários commits e a isto chama-se o seu Ramo Principal.
+
+Portanto, o ramo principal é o seu ramo principal de commits ou pontos
+
+de salvamento, e é seqüencial, e é geralmente onde o seu progresso principal
+
+é salvo ou confirmado. Mais tarde, introduzimos a ideia do Repositório Remoto.
+
+É importante notar que pode ter um repositório local completamente em paralelo com
+
+um repositório remoto para verificar as diferenças entre eles, mas também pode sincronizá-los
+
+ou enviar coisas do seu repositório local para o seu repositório remoto.
+
+Assim, no nosso caso, o repositório local é o ficheiro git que temos dentro do
+
+nosso diretório Story, e o repositório remoto é o GitHub, que aloja o nosso
+
+código e também aloja todas as alterações que foram feitas entre os diferentes commits.
+
+Então, temos este ramo principal de vários commits; primeiro commit, segundo commit, terceiro
+
+commit no nosso repositório git local, e quando executámos o comando "git push",
+
+então isso efetivamente empurrou todos esses commits, todas essas várias versões e
+
+alterações, e pedaços de código para o nosso repositório remoto no GitHub.
+
+Então é isso que o "git push" faz.
+
+Agora, na próxima lição, quero falar sobre o uso de ".gitignore" e como você pode evitar o
+
+upload de informações confidenciais, como chaves de API ou senhas, para seus repositórios remotos, por exemplo, GitHub.
+
+Tudo isto e muito mais na próxima lição.
+
+Vemo-nos lá.
