@@ -8,4 +8,4 @@ secrets.txt
 # ignora tudo que for txt no git
 
 # *.log
-# faz o mesmo com os log
+# faz o mesmo com os log.env
