@@ -1,0 +1,31 @@
+'para criar os arquivos e assim'
+
+New-Item -ItemType File
+
+'+ nome dos arquivos'
+
+New-Item -ItemType File file1.txt, file2.txt, file3.txt, secrets.txt
+
+'abrir os arquivos'
+
+notepad
+
+'+ nome do arquivo file1.txt'
+
+notepad file1.txt
+
+
+New-Item -ItemType File .gitignore
+
+era no shell
+agora no gitbash
+$ cd day-70
+$ cd 502
+$ cd Test
+PC@DESKTOP-QAH0SAN MINGW64 /c/dev/dev_projetos/001-udemy-101-aulas/day-70/502/Test
+
+git init
+git add .
+git status
+git rm --cached -r .
+git status
